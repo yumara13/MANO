@@ -1,0 +1,334 @@
+```html id="manofinal"
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Huesos de la Mano</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#ffebee,#ffcdd2);
+    color:#7f0000;
+    line-height:1.6;
+}
+
+/* ENCABEZADO */
+
+.header-top{
+    background:#b71c1c;
+    color:white;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 3px 10px rgba(0,0,0,.2);
+}
+
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo-area img{
+    width:80px;
+}
+
+.logo-area h2{
+    color:white;
+    margin:0;
+}
+
+.logo-area p{
+    color:#ffebee;
+    margin:0;
+}
+
+.autor{
+    text-align:right;
+    font-size:18px;
+    color:white;
+}
+
+/* PORTADA */
+
+header{
+    background:linear-gradient(90deg,#e53935,#b71c1c);
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+header h1{
+    font-size:3rem;
+}
+
+header p{
+    font-size:1.2rem;
+}
+
+/* CONTENIDO */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:40px 0;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    margin-bottom:25px;
+    border-radius:15px;
+    box-shadow:0 4px 12px rgba(0,0,0,.1);
+}
+
+h2{
+    color:#b71c1c;
+    border-left:6px solid #e53935;
+    padding-left:10px;
+    margin-bottom:15px;
+}
+
+ul{
+    padding-left:25px;
+}
+
+li{
+    margin-bottom:8px;
+}
+
+.highlight{
+    background:#ffebee;
+    border-left:5px solid #e53935;
+    padding:15px;
+    border-radius:10px;
+}
+
+/* IMÁGENES */
+
+.galeria{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:25px;
+    margin-top:20px;
+}
+
+.imagen{
+    text-align:center;
+}
+
+.imagen img{
+    width:100%;
+    border-radius:15px;
+    box-shadow:0 4px 12px rgba(0,0,0,.2);
+}
+
+.imagen h3{
+    margin-top:10px;
+    color:#b71c1c;
+}
+
+/* COLUMNAS */
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:20px;
+}
+
+footer{
+    background:#b71c1c;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header-top">
+
+    <div class="logo-area">
+
+        <img src="TECBA.png" alt="Logo TECBA">
+
+        <div>
+            <h2>Tecnológico Boliviano Alemán</h2>
+            <p>Anatomía Humana</p>
+        </div>
+
+    </div>
+
+    <div class="autor">
+        <strong>Por:</strong><br>
+        Jhery Quito Rivera
+    </div>
+
+</div>
+
+<header>
+
+    <h1>Huesos de la Mano</h1>
+
+    <p>Sistema Óseo del Miembro Superior</p>
+
+</header>
+
+<div class="container">
+
+    <div class="card">
+
+        <h2>Ubicación</h2>
+
+        <p>
+            La mano se encuentra distal al antebrazo y está formada por 27 huesos.
+        </p>
+
+        <div class="galeria">
+
+            <div class="imagen">
+                <img src="ubic.jpeg" alt="Ubicación de la Mano">
+                <h3>Ubicación de la Mano</h3>
+            </div>
+
+            <div class="imagen">
+                <img src="art.jpeg" alt="Articulaciones">
+                <h3>Articulaciones Principales</h3>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="grid">
+
+        <div class="card">
+
+            <h2>Carpo (Muñeca)</h2>
+
+            <p><strong>8 huesos</strong></p>
+
+            <h3>Fila Proximal</h3>
+
+            <ul>
+                <li>Escafoides</li>
+                <li>Semilunar</li>
+                <li>Piramidal</li>
+                <li>Pisiforme</li>
+            </ul>
+
+            <h3>Fila Distal</h3>
+
+            <ul>
+                <li>Trapecio</li>
+                <li>Trapezoide</li>
+                <li>Grande</li>
+                <li>Ganchoso</li>
+            </ul>
+
+            <div class="highlight">
+                Función: Forman la muñeca y permiten sus movimientos.
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <h2>Metacarpo</h2>
+
+            <p><strong>5 huesos</strong></p>
+
+            <ul>
+                <li>I Metacarpiano</li>
+                <li>II Metacarpiano</li>
+                <li>III Metacarpiano</li>
+                <li>IV Metacarpiano</li>
+                <li>V Metacarpiano</li>
+            </ul>
+
+            <div class="highlight">
+                Función: Forman la palma de la mano.
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Falanges</h2>
+
+        <p><strong>14 huesos</strong></p>
+
+        <h3>Pulgar</h3>
+
+        <ul>
+            <li>Falange proximal</li>
+            <li>Falange distal</li>
+        </ul>
+
+        <h3>Dedos 2 al 5</h3>
+
+        <ul>
+            <li>Falange proximal</li>
+            <li>Falange media</li>
+            <li>Falange distal</li>
+        </ul>
+
+        <div class="highlight">
+            Función: Permiten los movimientos de los dedos.
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Articulaciones Principales</h2>
+
+        <ul>
+            <li>Radiocarpiana (muñeca).</li>
+            <li>Carpometacarpianas.</li>
+            <li>Metacarpofalángicas.</li>
+            <li>Interfalángicas.</li>
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Movimientos de la Mano</h2>
+
+        <ul>
+            <li>Flexión.</li>
+            <li>Extensión.</li>
+            <li>Abducción.</li>
+            <li>Aducción.</li>
+            <li>Oposición del pulgar.</li>
+        </ul>
+
+    </div>
+
+</div>
+
+<footer>
+Anatomía Humana • Huesos de la Mano • Tecnológico Boliviano Alemán
+</footer>
+
+</body>
+</html>
+```
